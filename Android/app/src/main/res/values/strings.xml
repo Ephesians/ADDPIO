@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ADDPIO</string>
+    <string name="text_prompt">text:</string>
+    <string name="in_prompt">in:</string>
+    <string name="out_prompt">out:</string>
+    <string name="type">\u0020type\u0020</string>
+    <string name="number">\u0020number\u0020</string>
+    <string name="description">\u0020description\u0020</string>
+    <string name="output_success">OK</string>
+    <string name="bad_pin_number">bad pin number</string>
+    <string name="ip_address_prompt">IP address:</string>
+    <string name="ip_address_fail">Cannot get ip address</string>
+    <string name="connect_internet">Please connect to the internet</string>
+    <string name="error_input_format">error input format</string>
+    <string name="invalid_direction">invalid direction</string>
+    <string name="invalid_extra_number">invalid extra number</string>
+    <string name="invalid_pin_number">invalid pin number</string>
+    <string name="no_sensor">no sensor</string>
+    <string name="bad_index">bad index</string>
+    <string name="no_alarm">Android alarm not set</string>
+</resources>
