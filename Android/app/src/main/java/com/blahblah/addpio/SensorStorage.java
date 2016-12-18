@@ -56,9 +56,13 @@ public class SensorStorage implements SensorEventListener {
         for (Sensor sensor: list){
             int type = sensor.getType();
             if (sensorMap.get(type) == null) {
-                Sensor defaultSensor = sensorManager.getDefaultSensor(type);
-                sensorMap.put(type, defaultSensor);
-                sensorManager.registerListener(this, defaultSensor, SensorManager.SENSOR_DELAY_NORMAL);
+                Sensor useSensor = sensorManager.getDefaultSensor(type);
+                if (useSensor == null) {
+                    useSensor = sensor;
+                }
+                sensorMap.put(type, useSensor);
+                sensorManager.registerListener(this, useSensor, SensorManager.SENSOR_DELAY_NORMAL);
+
             }
         }
         for (Integer type : sensorMap.keySet()) {
